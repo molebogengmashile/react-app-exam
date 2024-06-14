@@ -1,0 +1,47 @@
+/* src/styles/DropdownMenu.css */
+
+/* Container for the dropdown menu */
+.menu-container {
+    position: absolute;
+    top: 60px;
+    right: 10px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-20px);
+    transition: opacity 0.3s ease, transform 0.3s ease, visibility 0.3s;
+    margin-right: 20px;
+  }
+  
+  /* Individual menu items */
+  .menu-item {
+    display: block;
+    padding: 1rem;
+    text-decoration: none;
+    color: #000;
+    font-family: 'Arial', sans-serif;
+    cursor: pointer;
+  }
+  
+  /* Hover effect for menu items */
+  .menu-item:hover {
+    background-color: #f0f0f0;
+  }
+  
+  /* Show menu when dropdown is open */
+  .menu-container.show {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    .menu-container {
+      width: 90%;
+      right: 5%;
+    }
+  }

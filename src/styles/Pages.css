@@ -1,0 +1,35 @@
+/* src/styles/Pages.css */
+
+/* Common styles for all pages */
+.page-container {
+    margin-top: 60px;
+    padding: 2rem;
+    font-family: 'Arial', sans-serif;
+    margin: 100px;
+    background-color: white;
+    z-index: 5;
+    
+  }
+
+  .Image{
+    max-width: 300px;
+    max-height: 500px;
+    margin: 10px;
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    .page-container {
+      padding: 1rem;
+    }
+    .Image{
+      max-width: 200px;
+     
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .page-container {
+      padding: 0.5rem;
+    }
+  }
