@@ -13,24 +13,28 @@ const DesignPage = () => {
   }
 
   return (
-    <div className="page-container">
+    <section className="page-container">
     <h1>Design Page</h1>
       <section className="blog-post">
           <h2>Website Design: Functionality and Simplicity </h2>
-          <p>When it comes to the design for this website, I've chosen prioritize functionality over everything else. For me, the goal was to create a site that was not only 
-            aesthetically pleasing, but also easy to read and navigate. That's why I opted for a classic color palette of white background and black text, reminiscent of the old newspaper design.
-             The landing page may seem plain at first glance, but the bold Times New Roman font immediately catches the eye and sets the tone.
-             <br></br> This design is meant to serve as the foundation for the final product,
-              one that is responsive and uncluttered, allowing the content to take center stage. By keeping things simple and focused, I can easily build upon this design and adjust it as needed, ensuring that the message is delivered
-               effectively, without distractions or unnecessary bells and whistles.
+          <p>The decision to opt for a minimalist color palette of a white background and bold black text was a strategic one,
+             inspired by the timeless aesthetic of classic newspaper design. This clean, uncluttered approach serves as the perfect foundation 
+             for the website, allowing the content to take center stage without distractions.  It is responsive and does not clutter the screen
+              and essentially gets the message across. The use of a simple font adds a sense of authority and professionalism, instantly drawing 
+              the user's eye and conveying a sense of functionality over fancy frills.
+               <br></br>
+               The navigation bar uses the standard conventions from most websites 
+              and also hides the navigation links to further emphasize the content. The landing page design is meant to draw the user's attention and set the 
+              tone for the application. The theme of the application is femicide, therefore the large "Say her name" text right above an animated image
+               of the dead bird in a red background plays into the theme and immediately gets the user's attention to the subject. 
 
                <br></br>
-               The decision to opt for a minimalist color palette of an off-white/grey background and bold black text was a strategic one, inspired by the timeless aesthetic of classic newspaper design. This clean, uncluttered approach serves as the perfect foundation for the website, 
-               allowing the content to take center stage without distractions. This design essentially acts as the foundation for the final product. I feel that with this design, I can easily build upon it and adjust it according to how my artwork turns out. It is responsive and does not
-                clutter the screen and essentially gets the message across. The use of a traditional font like Times New Roman adds a sense of authority and professionalism, instantly drawing the user's eye and conveying a sense of functionality over fancy frills. 
-                The navigation bar uses the standard conventions from most websites but still manages to stand out from the page. The use of sleek bold lines allows the user to differentiate between different sections and it also makes the site more dynamic. 
-              
-
+               References:
+               <br></br>
+               <ol>
+            <li>Image used for the bird that was then edited for the purpose of the landing page.<a href='https://spirituallyf.com/dead-bird-meaning/'>Found here</a>  </li>
+          
+          </ol>
               
            </p>
       </section>
@@ -44,7 +48,7 @@ const DesignPage = () => {
       {Array.from({ length: personCount }).map((_, index) => (
         <Person key={index} hasPopup={popupIndices.has(index)} />
       ))}
-    </div>
+    </section>
   );
 };
 

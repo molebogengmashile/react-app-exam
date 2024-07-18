@@ -11,7 +11,7 @@ const TheoryPage = () => {
   }
 
   return (
-    <div className="page-container">
+    <section className="page-container">
       
       {Array.from({ length: personCount }).map((_, index) => (
         <Person key={index} hasPopup={popupIndices.has(index)} />
@@ -21,20 +21,22 @@ const TheoryPage = () => {
       <section className="blog-section">
       <section className="blog-post">
           <h2>Internet Art Preperation and Exploration </h2>
-          <p>I believe that websites are no longer just digital billboards, they can become canvases for captivating storytelling.
-             As I plan and prepare the artwork for my upcoming internet, I'm excited to explore how I can use the power of internet space to tell a compelling narrative.
-              One technique I'm particularly drawn to is parallax scrolling, which creates an immersive, almost cinematic experience as the user navigates through the page. I'm inspired by examples like the Firewatch game page
-               and the award-winning interactive graphic novel 'The Boat' based on the story by Nam Le. These digital experiences showcase how skillful use of layering, depth, and movement can transport the viewer into a world of their own.
-                By incorporating React Spring, I plan to bring a similar sense of fluidity and dynamism to my website's artwork, inviting users to embark on a journey of discovery as they scroll through the pages. 
+          <p>I have chosen the theme of Femicide for my project. The Artwork represents the women and girls murdered at the hands of femicide.
+             The artwork shows several images of men on the page from a top-view perspective. The goal of this was to make the men appear as if they were
+              in a crowd on the webpage. When hovering over the crowd, some of the men will show a pop-up message with a name of a victim of femicide. 
+              The placement of the men and the messages will change every time the page is loaded. The messages are the first 100 names of victims from a list provided by Savannanews.com. 
               <br></br>
-              Although I have shifted from my original plan of using, I think this use of images and space creates a bigger Impact on the message the page is trying to convey. I have chosen the theme of Femicide for my project. The Art Work represents of the women and girls murdered at the hands of femicide.  
+              The interactivity of the artwork serves as a way to engage viewers and bring awareness to the tragic issue of femicide. By hovering over the anonymous figures, the viewer
+               is confronted with the individual names of victims, a reminder of the lives lost. The randomized placement of the men and messages with each page load further emphasizes the
+                unpredictable and senseless nature of these crimes, emphasizing the importance of remembering each victim as a unique individual. This interactive element not only honors the memory
+                 of the femicide victims, but also encourages the audience to reflect on the prevalence and gravity of this pervasive social issue. The men also appear throughout the web application to further emphasize the message.   
                <br></br>
                 References:
           <br></br>
           
           <ol>
-            <li>Firewatch.com (2016).<a href='https://www.firewatchgame.com/ '>Found here</a>  </li>
-            <li>The Boat (2015) Nam le, SBS Australia< a href='https://www.sbs.com.au/theboat/'>Found here</a> </li>
+            <li>Image used for the men that was then edited for the purpose of the artwork.<a href='https://unsplash.com/photos/man-in-black-formal-suit-jacket-and-pants-carrying-black-bag-while-walking-on-pedestrian-lane-during-daytime-wUZjnOv7t0g '>Found here</a>  </li>
+            <li>Fallen Angels List of South African murdered women and girls< a href='https://savannanews.com/fallen-angels-list-of-south-african-murdered-women-and-girls/'>Found here</a> </li>
             
 
           </ol>
@@ -107,7 +109,7 @@ const TheoryPage = () => {
         </section>
 
       </section>
-    </div>
+    </section>
   );
 };
 

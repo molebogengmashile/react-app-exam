@@ -6,15 +6,15 @@ import '../styles/InternetArtPage.css'
 
 const InternetArtPage = () => {
   return (
-    <div className="page-container">
+    <section className="page-container">
       <h1>Internet Art Project</h1>
       <p>Fallen Angels of South African murdered women and girls.</p>
-       <div className="internet-art-page">
+       <section className="internet-art-page">
       
        <Crowd />
-      </div>
+      </section>
 
-    </div>
+    </section>
    
   );
 };

@@ -1,60 +1,103 @@
-.home-container {
-    padding: 2rem;
-    text-align: center;
-    height: 100vh;
-    margin-top: 100px;
-    background-color: rgba(207, 22, 22, 0.816);
-   
-  }
+/* src/LandingPage.css */
 
+/* Keyframes for text animation */
+@keyframes textAnimation {
+  0% { opacity: 0; transform: translateY(-20px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
 
- 
-  
-  .landing h1 {
-    font-size: 5rem;
-    margin-bottom: 3rem;
-    color: #000;
-  }
-  
-  .landing p {
-    font-size: 1.5rem;
-    margin-bottom: 2rem;
-    color: #333;
-  }
-  
-  .cta-button {
-    background: #f0f0f0;
-    color: #333;
-    border: 2px solid #000;
-    padding: 0.75rem 1.5rem;
-    font-size: 1rem;
-    cursor: pointer;
-    transition: background 0.3s;
-  }
-  
-  .cta-button:hover {
-    background: #333;
-    color: #f0f0f0;
-  }
+/* Keyframes for image animation */
+@keyframes imageAnimation {
+  0% { transform: rotate(0); }
+  50% { transform: rotate(5deg); }
+  100% { transform: rotate(0); }
+}
 
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  padding: 0 10%;
+  background-color: #ffffff;
+  position: relative;
+}
 
-   
-  @media (max-width: 768px) {
-    .home-container {
-      flex-direction: column;
-      align-items: flex-start;
-      padding: 1rem;
-    }
-  
-    .landing {
-      width: 100%;
-      padding: 1rem;
-    }
-  
-    .blog-post {
-      padding: 1rem;
-    }
-    .Image{
-        max-width: 100px;
-      }
+.text {
+  font-size: 6rem;
+  font-family: 'Helvetica Neue', sans-serif;
+  text-align: center;
+  animation: textAnimation 2s ease-in-out;
+  z-index: 2;
+  color: black;
+  text-shadow: 2px 2px #ffffff;
+}
+
+@media (max-width: 768px) {
+  .text {
+    font-size: 4rem;
   }
+}
+
+@media (max-width: 480px) {
+  .text {
+    font-size: 3rem;
+  }
+}
+
+.red-block {
+  width: 100%;
+  height: 300px;
+  background-color: red;
+  position: absolute;
+  bottom: 0;
+}
+
+@media (max-width: 768px) {
+  .red-block {
+    height: 200px;
+  }
+}
+
+@media (max-width: 480px) {
+  .red-block {
+    height: 150px;
+  }
+}
+
+.image-container {
+  position: absolute;
+  bottom: 20px;
+  right: 20%;
+  z-index: 1;
+}
+
+@media (max-width: 768px) {
+  .image-container {
+    right: 10%;
+  }
+}
+
+@media (max-width: 480px) {
+  .image-container {
+    right: 5%;
+  }
+}
+
+.image {
+  width: 40%;
+  animation: imageAnimation 3s infinite;
+}
+
+@media (max-width: 768px) {
+  .image {
+    width: 50%;
+  }
+}
+
+@media (max-width: 480px) {
+  .image {
+    width: 60%;
+  }
+}
