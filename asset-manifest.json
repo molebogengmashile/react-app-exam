@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/react-app-exam/static/css/main.90c4f10f.css",
-    "main.js": "/react-app-exam/static/js/main.cf60568e.js",
+    "main.css": "/react-app-exam/static/css/main.72ae008e.css",
+    "main.js": "/react-app-exam/static/js/main.70a5ed47.js",
     "static/js/453.29c65d9d.chunk.js": "/react-app-exam/static/js/453.29c65d9d.chunk.js",
     "static/media/Wireframe2.jpg": "/react-app-exam/static/media/Wireframe2.79d25f704ae07269915f.jpg",
     "static/media/Wireframe1.jpg": "/react-app-exam/static/media/Wireframe1.3d297c7e7bc14ec813bc.jpg",
     "static/media/Deadbird.png": "/react-app-exam/static/media/Deadbird.ed2452e6d1124b33c1f0.png",
     "index.html": "/react-app-exam/index.html",
-    "main.90c4f10f.css.map": "/react-app-exam/static/css/main.90c4f10f.css.map",
-    "main.cf60568e.js.map": "/react-app-exam/static/js/main.cf60568e.js.map",
+    "main.72ae008e.css.map": "/react-app-exam/static/css/main.72ae008e.css.map",
+    "main.70a5ed47.js.map": "/react-app-exam/static/js/main.70a5ed47.js.map",
     "453.29c65d9d.chunk.js.map": "/react-app-exam/static/js/453.29c65d9d.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.90c4f10f.css",
-    "static/js/main.cf60568e.js"
+    "static/css/main.72ae008e.css",
+    "static/js/main.70a5ed47.js"
   ]
 }
